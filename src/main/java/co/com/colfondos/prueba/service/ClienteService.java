@@ -25,12 +25,14 @@ public class ClienteService {
         return clienteRepository.findById(id).get();
     }
 
-    public void saveOrUpdate(Cliente person) {
-        clienteRepository.save(person);
+    public void saveOrUpdate(Cliente cliente) {
+        clienteRepository.save(cliente);
     }
 
     public void delete(int id) {
         clienteRepository.deleteById(id);
     }
+    
+    
 
 }
